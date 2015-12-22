@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 
     // concat: {   
@@ -69,4 +69,3 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['concat', 'uglify']);
 
 };
->>>>>>> 72e8b5b22b61469a57ec1c64bb2d2b2bb720ace1
