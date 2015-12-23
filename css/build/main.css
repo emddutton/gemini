@@ -1,0 +1,94 @@
+/* line 1, ../src/_header.scss */
+.main-header,
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 7, ../src/_header.scss */
+.main-header {
+  padding-top: 2em;
+}
+
+/* line 11, ../src/_header.scss */
+.site-logo {
+  width: 110px;
+  align-self: center;
+}
+
+/* line 16, ../src/_header.scss */
+.nav {
+  margin-top: 1.5em;
+}
+/* line 18, ../src/_header.scss */
+.nav a {
+  display: block;
+  color: #797e83;
+  font-size: 1.125em;
+  font-weight: 300;
+  text-align: center;
+  padding: .4em;
+  border-bottom: 1px solid #ebecec;
+}
+
+/* line 29, ../src/_header.scss */
+.nav
+.nav a:hover {
+  color: #0b0b0b;
+  border-bottom-color: #52bab3;
+}
+
+/* --------------------------
+  Media Queries
+--------------------------- */
+@media (min-width: 769px) {
+  /* line 41, ../src/_header.scss */
+  .main-header {
+    height: 200px;
+    justify-content: flex-end;
+  }
+
+  /* line 45, ../src/_header.scss */
+  .site-logo {
+    width: 140px;
+  }
+
+  /* line 48, ../src/_header.scss */
+  .nav {
+    margin-top: 3em;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* line 52, ../src/_header.scss */
+  .nav a {
+    border-bottom-color: transparent;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 59, ../src/_header.scss */
+  .main-header {
+    flex-direction: row;
+  }
+
+  /* line 62, ../src/_header.scss */
+  .site-logo {
+    margin-right: auto;
+  }
+
+  /* line 65, ../src/_header.scss */
+  .nav {
+    margin-top: 0;
+    align-self: center;
+  }
+  /* line 68, ../src/_header.scss */
+  .nav li {
+    margin-left: .65em;
+    margin-right: .65em;
+  }
+}
+/* line 8, ../src/main.scss */
+body {
+  background: url(images/starry.jpe);
+}
+
+/*# sourceMappingURL=main.css.map */
