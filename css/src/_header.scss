@@ -23,14 +23,11 @@
 	text-align: center;
 	padding: .4em;
 	border-bottom: 1px solid #ebecec;
+		&:hover {
+		color: #0b0b0b;
+		border-bottom-color: #52bab3;
+		}
 	}
-}
-
-.nav 
-
-.nav a:hover {
-	color: #0b0b0b;
-	border-bottom-color: #52bab3;
 }
 
 /* --------------------------

@@ -30,9 +30,7 @@
   padding: .4em;
   border-bottom: 1px solid #ebecec;
 }
-
-/* line 29, ../src/_header.scss */
-.nav
+/* line 26, ../src/_header.scss */
 .nav a:hover {
   color: #0b0b0b;
   border-bottom-color: #52bab3;
@@ -42,45 +40,45 @@
   Media Queries
 --------------------------- */
 @media (min-width: 769px) {
-  /* line 41, ../src/_header.scss */
+  /* line 38, ../src/_header.scss */
   .main-header {
     height: 200px;
     justify-content: flex-end;
   }
 
-  /* line 45, ../src/_header.scss */
+  /* line 42, ../src/_header.scss */
   .site-logo {
     width: 140px;
   }
 
-  /* line 48, ../src/_header.scss */
+  /* line 45, ../src/_header.scss */
   .nav {
     margin-top: 3em;
     flex-direction: row;
     justify-content: space-between;
   }
-  /* line 52, ../src/_header.scss */
+  /* line 49, ../src/_header.scss */
   .nav a {
     border-bottom-color: transparent;
   }
 }
 @media (min-width: 1025px) {
-  /* line 59, ../src/_header.scss */
+  /* line 56, ../src/_header.scss */
   .main-header {
     flex-direction: row;
   }
 
-  /* line 62, ../src/_header.scss */
+  /* line 59, ../src/_header.scss */
   .site-logo {
     margin-right: auto;
   }
 
-  /* line 65, ../src/_header.scss */
+  /* line 62, ../src/_header.scss */
   .nav {
     margin-top: 0;
     align-self: center;
   }
-  /* line 68, ../src/_header.scss */
+  /* line 65, ../src/_header.scss */
   .nav li {
     margin-left: .65em;
     margin-right: .65em;
