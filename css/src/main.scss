@@ -1,10 +1,28 @@
+/*colors*/
+$red: #580905;
+$base-font: #ccc;
+$background: rgba(0,0,0,.6);
+
+/*base styles*/
+body {
+	background: url("../../images/starrysky.jpg");
+	margin: 0;
+	padding: 0;
+	color: $base-font;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+.content {
+	background-color: $background;
+	padding: 2em;
+}
+
+/*imports*/
 @import 'header';
 @import 'footer';
 @import 'home';
 @import 'about';
 @import 'where';
 @import 'beers';
-
-body {
-	background: url(images/starry.jpe);
-}

@@ -1,0 +1,29 @@
+.home .content {
+	padding: 0;
+}
+.intro {
+	img {
+	max-width: 100%;
+	}
+	.introtext {
+    font-size: 5em;
+    font-family: "Happy Monkey";
+    margin-top: -3em;
+    text-align: center;
+	}
+}
+
+.lineup {
+	overflow: auto;
+	padding: 3em 0;
+	img {
+		float: left;
+	}
+	span {
+		float: right;
+		font-family: "Happy Monkey";
+		font-size: 4em;
+		width: 50%;
+		margin-top: 1em;
+	}
+}

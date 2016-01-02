@@ -1,1 +1,25 @@
+.main-footer,
+.nav, .main-footer .container {
+	
+}
 
+.main-footer {
+	padding-top: 2em;
+	background: $background;
+	overflow: auto;
+}
+.contactinfo {
+	float: left;
+}
+.socialicons {
+	display: inline-flex;
+	float: right;
+	li {
+		list-style: none;
+	}
+	.fa {
+		color: $base-font;
+		margin-left: .5em;
+    	font-size: 2.5em;	
+	}
+}

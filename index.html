@@ -5,20 +5,59 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/build/main.css">
   <link href='https://fonts.googleapis.com/css?family=Lato|Happy+Monkey' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="home">
 
+  <!-- <template id="header"> -->
   <header class="main-header">
+    <div class="container">
       <a class="site-logo" href="/">
         <img src="images/smokeybanditlogo.jpg" alt="GeminiLogo">
       </a>
       
       <ul class="nav">
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">The Beers</a></li>    
-        <li><a href="#">Where to Buy</a></li>           
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="thebeers.html">The Beers</a></li>    
+        <li><a href="wheretobuy.html">Where to Buy</a></li>           
       </ul>
+    </div>
   </header>
+<!-- </template>
+ -->
+  <div class="container">
+    <div class="content">
+      <div class="intro">
+      <img src="images/barrels.jpg">
+      <div class="introtext">
+        We're a gypsy brewery that does blah blah blah. Insert super catchy tag line here.
+      </div>
+    </div>
+      <div class="lineup">
+        <img src="http://placehold.it/500x400">
+        <span>This is our lineup right now. Stay tuned for more!</span>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="main-footer">
+    <div class="container">
+      <div class="contactinfo">
+        For all beer related inquiries contact chris@geminibeer.com
+      </div>
+      
+      <ul class="socialicons">
+        <li><i class="fa fa-facebook-square"></i></li>
+        <li><i class="fa fa-twitter-square"></i></li>    
+        <li><i class="fa fa-instagram"></i></li>           
+      </ul>
+    </div>
+  </footer>
+  <script>
+    var tmpl = document.getElementById('header');
+    document.body.appendChild(tmpl.content.cloneNode(true));
+  </script>
 
+  
 </body>
 </html>  

@@ -1,92 +1,184 @@
+/*colors*/
+/*base styles*/
+/* line 7, ../src/main.scss */
+body {
+  background: url("../../images/starrysky.jpg");
+  margin: 0;
+  padding: 0;
+  color: #ccc;
+}
+
+/* line 13, ../src/main.scss */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 17, ../src/main.scss */
+.content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2em;
+}
+
+/*imports*/
 /* line 1, ../src/_header.scss */
 .main-header,
-.nav {
+.nav, .main-header .container {
   display: flex;
   flex-direction: column;
 }
 
 /* line 7, ../src/_header.scss */
 .main-header {
-  padding-top: 2em;
+  /*padding-top: 2em;*/
+  background: rgba(0, 0, 0, 0.6);
 }
 
-/* line 11, ../src/_header.scss */
+/* line 12, ../src/_header.scss */
 .site-logo {
-  width: 110px;
   align-self: center;
 }
+/* line 14, ../src/_header.scss */
+.site-logo img {
+  padding: .6em;
+  width: 250px;
+}
 
-/* line 16, ../src/_header.scss */
+/* line 20, ../src/_header.scss */
 .nav {
   margin-top: 1.5em;
 }
-/* line 18, ../src/_header.scss */
+/* line 22, ../src/_header.scss */
+.nav li {
+  list-style: none;
+}
+/* line 25, ../src/_header.scss */
 .nav a {
   display: block;
-  color: #797e83;
-  font-size: 1.125em;
-  font-weight: 300;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1.5em;
+  font-weight: 600;
   text-align: center;
-  padding: .4em;
+  padding: .6em;
+  font-family: 'Lato';
   border-bottom: 1px solid #ebecec;
 }
-/* line 26, ../src/_header.scss */
+/* line 35, ../src/_header.scss */
 .nav a:hover {
-  color: #0b0b0b;
-  border-bottom-color: #52bab3;
+  color: #FFF;
+  border-bottom-color: #580905;
 }
 
 /* --------------------------
   Media Queries
 --------------------------- */
 @media (min-width: 769px) {
-  /* line 38, ../src/_header.scss */
+  /* line 47, ../src/_header.scss */
   .main-header {
-    height: 200px;
+    /*height: 200px;*/
     justify-content: flex-end;
+    border-bottom: 5px solid #580905;
   }
 
-  /* line 42, ../src/_header.scss */
+  /* line 52, ../src/_header.scss */
   .site-logo {
-    width: 140px;
+    /*width: 140px;*/
   }
 
-  /* line 45, ../src/_header.scss */
+  /* line 55, ../src/_header.scss */
   .nav {
     margin-top: 3em;
     flex-direction: row;
     justify-content: space-between;
   }
-  /* line 49, ../src/_header.scss */
+  /* line 59, ../src/_header.scss */
   .nav a {
     border-bottom-color: transparent;
   }
 }
 @media (min-width: 1025px) {
-  /* line 56, ../src/_header.scss */
-  .main-header {
+  /* line 66, ../src/_header.scss */
+  .main-header, .main-header .container {
     flex-direction: row;
   }
 
-  /* line 59, ../src/_header.scss */
+  /* line 69, ../src/_header.scss */
   .site-logo {
     margin-right: auto;
   }
 
-  /* line 62, ../src/_header.scss */
+  /* line 72, ../src/_header.scss */
   .nav {
-    margin-top: 0;
     align-self: center;
   }
-  /* line 65, ../src/_header.scss */
+  /* line 75, ../src/_header.scss */
   .nav li {
     margin-left: .65em;
     margin-right: .65em;
   }
 }
-/* line 8, ../src/main.scss */
-body {
-  background: url(images/starry.jpe);
+/* line 6, ../src/_footer.scss */
+.main-footer {
+  padding-top: 2em;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: auto;
+}
+
+/* line 11, ../src/_footer.scss */
+.contactinfo {
+  float: left;
+}
+
+/* line 14, ../src/_footer.scss */
+.socialicons {
+  display: inline-flex;
+  float: right;
+}
+/* line 17, ../src/_footer.scss */
+.socialicons li {
+  list-style: none;
+}
+/* line 20, ../src/_footer.scss */
+.socialicons .fa {
+  color: #ccc;
+  margin-left: .5em;
+  font-size: 2.5em;
+}
+
+/* line 1, ../src/_home.scss */
+.home .content {
+  padding: 0;
+}
+
+/* line 5, ../src/_home.scss */
+.intro img {
+  max-width: 100%;
+}
+/* line 8, ../src/_home.scss */
+.intro .introtext {
+  font-size: 5em;
+  font-family: "Happy Monkey";
+  margin-top: -3em;
+  text-align: center;
+}
+
+/* line 16, ../src/_home.scss */
+.lineup {
+  overflow: auto;
+  padding: 3em 0;
+}
+/* line 19, ../src/_home.scss */
+.lineup img {
+  float: left;
+}
+/* line 22, ../src/_home.scss */
+.lineup span {
+  float: right;
+  font-family: "Happy Monkey";
+  font-size: 4em;
+  width: 50%;
+  margin-top: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */
