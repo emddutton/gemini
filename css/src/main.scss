@@ -5,10 +5,11 @@ $background: rgba(0,0,0,.6);
 
 /*base styles*/
 body {
-	background: url("../../images/starrysky.jpg");
+	background-color: #222;
 	margin: 0;
 	padding: 0;
 	color: $base-font;
+	font-family: "Lato";
 }
 .container {
 	width: 80%;

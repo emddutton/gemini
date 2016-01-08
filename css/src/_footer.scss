@@ -1,11 +1,12 @@
 .main-footer,
 .nav, .main-footer .container {
-	
+	font-family: "Lato";
 }
 
 .main-footer {
 	padding-top: 2em;
-	background: $background;
+	background: $background url("../../images/starrysky.jpg");
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
 	overflow: auto;
 }
 .contactinfo {
@@ -19,7 +20,7 @@
 	}
 	.fa {
 		color: $base-font;
-		margin-left: .5em;
+		margin-right: .5em;
     	font-size: 2.5em;	
 	}
 }
